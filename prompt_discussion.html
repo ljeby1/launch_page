@@ -27,7 +27,7 @@
             </div>
         </div>
     </nav>
-    <section class="py-5">
+    <section class="bg-dark py-5">
         <div class="container py-5">
             <div class="row mb-4 mb-lg-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -36,21 +36,40 @@
             </div>
             <div class="row d-flex">
                 <div class="col-xl-4 col-xxl-4" style="border-radius: 0px;border-right: 0.2px dashed #c8c7c7 ;">
-                    <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center" style="padding-right: 4px;padding-left: 4px;box-shadow: inset 0px 0px;">
-                            <div class="bs-icon-xl bs-icon-circle bs-icon-primary shadow bs-icon my-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"></path>
-                                </svg></div>
+                    <div class="card" id="Chat_Topic">
+                        <div class="card-body text-center bg-dark d-flex flex-column align-items-center" style="padding-right: 4px;padding-left: 4px;box-shadow: inset 0px 0px;">
+                            <p>Discussion Topic</p>
                             <form class="flex-fill" id="chat_topic" method="post" style="width: 90%;">
-                                <div><textarea class="form-control" id="txt_chat_topic" placeholder="Chat Topic" rows="10" style="padding-right: 28px;padding-left: 16px;"></textarea></div>
+                                <div><textarea class="form-control" id="txt_chat_topic" placeholder="i.e. Discuss the best means to deliver a Medicare project by a Managed Care Organization" rows="10" style="padding-right: 28px;padding-left: 16px;"></textarea></div>
                                 <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit" style="padding-top: 10.6px;margin-top: 12px;">Start Conversation</button></div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center" style="padding-right: 4px;padding-left: 4px;box-shadow: inset 0px 0px;background: rgba(48,62,89,0.5);border-radius: 16px;opacity: 1;">
+                            <p style="color: rgb(255,253,253);font-weight: bold;">Discussion Participants</p>
+                            <div style="margin-left: 14px;margin-right: 16px;">
+                                <div class="participant"><img class="avatar" src="assets/img/team/avatar2.jpg">
+                                    <div>
+                                        <p class="fw-bold mb-0" style="color: rgb(200,201,204);">John Smith</p>
+                                        <p class="mb-0" style="color: rgb(169,166,166);">User's Title</p>
+                                    </div>
+                                </div>
+                                <div class="separator"></div>
+                                <div class="participant"><img class="avatar" src="assets/img/team/avatar2.jpg">
+                                    <div>
+                                        <p class="fw-bold mb-0" style="color: rgb(200,201,204);">John Smith</p>
+                                        <p class="mb-0" style="color: rgb(169,166,166);">User's Title</p>
+                                    </div>
+                                </div>
+                                <div class="separator"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="card-body text-center d-flex flex-column align-items-center" data-bs-spy="scroll" data-bs-smooth-scroll="true"><div class="chat-container">
+                        <div class="card-body text-center bg-dark d-flex flex-column align-items-center" data-bs-spy="scroll" data-bs-smooth-scroll="true"><div class="chat-container">
     <!-- Assistant Message -->
     <div class="chat-message assistant">
         <img src="assets/img/team/avatar1.jpg" alt="Assistant Avatar" class="avatar">
